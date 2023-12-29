@@ -1,5 +1,4 @@
-import Header from "../../components/Header";
-
+import "../../assets/css/Styles.css";
 function About() {
   return (
     <div>

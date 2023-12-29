@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 120px 50px 120px;
+  .navbar_links {
+    display: flex;
+  }
+}
+.navbar_links-detail {
+  padding: 0 57px;
+
+  a {
+    text-decoration: none;
+    color: #ff6060;
+
+    &.active {
+      color: #ff6060;
+      text-decoration: underline;
+    }
+  }
+}

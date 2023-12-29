@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 120px 50px 120px;
+}
+.navbar .navbar_links {
+  display: flex;
+}
+
+.navbar_links-detail {
+  padding: 0 57px;
+}
+.navbar_links-detail a {
+  text-decoration: none;
+  color: #ff6060;
+}
+.navbar_links-detail a.active {
+  color: #ff6060;
+  text-decoration: underline;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,1 +1,6 @@
-/*# sourceMappingURL=Styles.css.map */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}/*# sourceMappingURL=Styles.css.map */

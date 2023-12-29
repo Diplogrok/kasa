@@ -1,5 +1,5 @@
-function Footer({ children }) {
-  return <div className="">{children}</div>;
+function Footer() {
+  return <nav>FOOTER</nav>;
 }
 
 export default Footer;
