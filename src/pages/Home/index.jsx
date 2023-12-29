@@ -1,3 +1,5 @@
+import { places } from "../../datas/places";
+
 function Home() {
   return (
     <div>

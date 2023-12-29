@@ -1,11 +1,5 @@
-import { Link } from "react-router-dom";
-
-function Footer() {
-  return (
-    <nav>
-      <Link to="">KASA</Link>
-    </nav>
-  );
+function Footer({ children }) {
+  return <div className="">{children}</div>;
 }
 
 export default Footer;
