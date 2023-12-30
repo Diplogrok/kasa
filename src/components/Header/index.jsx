@@ -8,10 +8,19 @@ function Header() {
       <img src={logo} alt="" className="navbar_logo" />
       <div className="navbar_links">
         <div className="navbar_links-detail">
-          <NavLink to="">Accueil</NavLink>
+          <NavLink
+            to=""
+            className={({ isActive }) => (isActive ? "active" : "")}>
+            Accueil
+          </NavLink>
         </div>
+
         <div className="navbar_links-detail">
-          <NavLink to="/about">A Propos</NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}>
+            A Propos
+          </NavLink>
         </div>
       </div>
     </nav>
