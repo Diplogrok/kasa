@@ -1,0 +1,53 @@
+p {
+  font-size: 18px;
+}
+.caroussel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .caroussel_img {
+    border-radius: 25px;
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    padding-bottom: 20px;
+  }
+}
+.caroussel_ico {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  font-size: 80px;
+}
+.left {
+  right: 1500px;
+}
+.right {
+  left: 1500px;
+}
+
+.container,
+.location {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ff6060;
+  .container_title {
+    font-size: 36px;
+    margin: 0px;
+  }
+}
+.container_host {
+  display: flex;
+  align-items: center;
+  .container_host-name {
+    padding-right: 10px;
+  }
+}
+.container_host-picture {
+  width: 64px;
+  border-radius: 90px;
+}
