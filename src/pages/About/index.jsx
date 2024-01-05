@@ -1,20 +1,11 @@
-import React, { useState } from "react";
 import "../../assets/css/Styles.css";
 import "../../assets/css/About.css";
 import background from "../../assets/images/background02.png";
 import jsonData from "../../assets/datas/About.json";
+import Collapse from "../../components/Collapse";
 
 function About() {
   const data = jsonData;
-  const [expandedItems, setExpandedItems] = useState(
-    Array(data.length).fill(false)
-  );
-
-  const handleIconClick = (index) => {
-    const newExpandedItems = [...expandedItems];
-    newExpandedItems[index] = !newExpandedItems[index];
-    setExpandedItems(newExpandedItems);
-  };
 
   return (
     <div>
@@ -23,23 +14,10 @@ function About() {
       </div>
       {data && (
         <div className="details">
-          {data.map((about, index) => (
-            <div className="details_container" key={about.id}>
-              <div
-                className="details_container-animation"
-                onClick={() => handleIconClick(index)}>
-                <h3 className="details_container-animation--title">
-                  {about.title}
-                </h3>
-                <i
-                  className={`fa-solid fa-chevron-up details_container-animation--ico ${
-                    expandedItems[index] ? "expanded" : ""
-                  }`}></i>
-              </div>
-              {expandedItems[index] && (
-                <p className="details_container-txt">{about.description}</p>
-              )}
-            </div>
+          {data.map((about) => (
+            <Collapse key={about.id} title={about.title}>
+              <p className="details_container-txt">{about.description}</p>
+            </Collapse>
           ))}
         </div>
       )}

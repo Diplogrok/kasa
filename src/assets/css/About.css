@@ -3,44 +3,40 @@
   flex-direction: column;
   align-items: center;
 }
-.details .details_container {
+.details .description_content {
+  width: 1023px;
   padding-bottom: 30px;
 }
-.details .details_container-txt {
-  border-radius: 0px 0px 5px 5px;
-  margin: 0px;
-  font-size: 18px;
-  color: #ff6060;
-  width: 1023px;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  background: #f6f6f6;
-}
-
-.details_container-animation {
+.details .description_content-animation {
   padding: 15px;
   border-radius: 5px;
-  width: 1023px;
   background: #ff6060;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.details_container-animation .details_container-animation--title {
+.details .description_content-animation--title {
   margin: 0;
   font-size: 24px;
   font-weight: 500;
 }
-
-.details_container-animation--ico {
+.details .description_content-animation--ico {
   cursor: pointer;
   background-color: #ff6060;
   color: white;
   font-size: 32px;
   transition: transform 0.1s ease-in-out;
 }
-
-.details_container-animation--ico.expanded {
+.details .description_content-animation.expanded .description_content--ico {
   transform: rotate(-180deg);
+}
+.details .description_content-txt {
+  border-radius: 0px 0px 5px 5px;
+  margin: 0px;
+  font-size: 18px;
+  color: #ff6060;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f6f6f6;
 }/*# sourceMappingURL=About.css.map */

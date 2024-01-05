@@ -3,21 +3,12 @@ import { useParams } from "react-router-dom";
 import jsonData from "../../assets/datas/Logements.json";
 import "../../assets/css/Places.css";
 import { renderStars } from "../Places/Rating";
+import Collapse from "../../components/Collapse";
 
 function Places() {
   const { id } = useParams();
   const selectedPlace = jsonData.find((item) => item.id === id);
-  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
-  const [isEquipmentsVisible, setEquipmentsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const toggleDescription = () => {
-    setDescriptionVisible(!isDescriptionVisible);
-  };
-
-  const toggleEquipments = () => {
-    setEquipmentsVisible(!isEquipmentsVisible);
-  };
 
   const handleImageChange = (direction) => {
     const lastIndex = selectedPlace.pictures.length - 1;
@@ -74,46 +65,22 @@ function Places() {
         </div>
       </div>
       <div className="description">
-        <div className="description_content">
-          <div
-            className="description_content-animation"
-            onClick={toggleDescription}>
-            <h3 className="description_content-animation--title">
-              Description
-            </h3>
-            <i
-              className={`fa-solid fa-chevron-up description_content-animation--ico ${
-                isDescriptionVisible ? "expanded" : ""
-              }`}></i>
+        <Collapse title="Description">
+          <div className="description_content-txt">
+            {selectedPlace.description}
           </div>
-          {isDescriptionVisible && (
-            <div className="description_content-txt">
-              {selectedPlace.description}
-            </div>
-          )}
-        </div>
-        <div className="description_content">
-          <div
-            className="description_content-animation"
-            onClick={toggleEquipments}>
-            <h3 className="description_content-animation--title">
-              Équipements
-            </h3>
-            <i
-              className={`fa-solid fa-chevron-up description_content-animation--ico ${
-                isEquipmentsVisible ? "expanded" : ""
-              }`}></i>
+        </Collapse>
+
+        <Collapse title="Équipements">
+          <div className="description_content-txt">
+            {selectedPlace.equipments.map((tag, index) => (
+              <span key={index}>{tag}</span>
+            ))}
           </div>
-          {isEquipmentsVisible && (
-            <div className="description_content-txt">
-              {selectedPlace.equipments.map((tag, index) => (
-                <span key={index}>{tag}</span>
-              ))}
-            </div>
-          )}
-        </div>
+        </Collapse>
       </div>
     </div>
   );
 }
+
 export default Places;
