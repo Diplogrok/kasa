@@ -9,6 +9,7 @@ function Places() {
   const selectedPlace = jsonData.find((item) => item.id === id);
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
   const [isEquipmentsVisible, setEquipmentsVisible] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const toggleDescription = () => {
     setDescriptionVisible(!isDescriptionVisible);
@@ -17,6 +18,20 @@ function Places() {
   const toggleEquipments = () => {
     setEquipmentsVisible(!isEquipmentsVisible);
   };
+
+  const handleImageChange = (direction) => {
+    const lastIndex = selectedPlace.pictures.length - 1;
+    let newIndex;
+
+    if (direction === "next") {
+      newIndex = currentImageIndex === lastIndex ? 0 : currentImageIndex + 1;
+    } else {
+      newIndex = currentImageIndex === 0 ? lastIndex : currentImageIndex - 1;
+    }
+
+    setCurrentImageIndex(newIndex);
+  };
+
   if (!selectedPlace) {
     return <div>Place not found</div>;
   }
@@ -24,13 +39,17 @@ function Places() {
   return (
     <div>
       <div className="caroussel">
-        <i className="fa-solid fa-chevron-left caroussel_ico left"></i>
+        <i
+          className="fa-solid fa-chevron-left caroussel_ico left"
+          onClick={() => handleImageChange("prev")}></i>
         <img
           className="caroussel_img"
-          src={selectedPlace.pictures[0]}
+          src={selectedPlace.pictures[currentImageIndex]}
           alt={selectedPlace.title}
         />
-        <i className="fa-solid fa-chevron-right caroussel_ico right"></i>
+        <i
+          className="fa-solid fa-chevron-right caroussel_ico right"
+          onClick={() => handleImageChange("next")}></i>
       </div>
       <div className="container">
         <h1 className="container_title">{selectedPlace.title}</h1>
