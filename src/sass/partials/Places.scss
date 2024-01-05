@@ -1,11 +1,13 @@
 p {
   font-size: 18px;
 }
+
 .caroussel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
   .caroussel_img {
     border-radius: 25px;
     width: 1240px;
@@ -13,18 +15,21 @@ p {
     object-fit: cover;
     padding-bottom: 20px;
   }
-}
-.caroussel_ico {
-  cursor: pointer;
-  position: absolute;
-  color: white;
-  font-size: 80px;
-}
-.left {
-  right: 1300px;
-}
-.right {
-  left: 1300px;
+
+  .caroussel_ico {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-size: 80px;
+  }
+
+  .left {
+    right: 1500px;
+  }
+
+  .right {
+    left: 1500px;
+  }
 }
 
 .container,
@@ -35,21 +40,25 @@ p {
   justify-content: space-between;
   align-items: center;
   color: #ff6060;
+
   .container_title {
     font-size: 36px;
     margin: 0px;
   }
-}
-.container_host {
-  display: flex;
-  align-items: center;
-  .container_host-name {
-    padding-right: 10px;
+
+  .container_host {
+    display: flex;
+    align-items: center;
+
+    .container_host-name {
+      padding-right: 10px;
+    }
+
+    .container_host-picture {
+      width: 64px;
+      border-radius: 90px;
+    }
   }
-}
-.container_host-picture {
-  width: 64px;
-  border-radius: 90px;
 }
 
 .subtitle {
@@ -59,6 +68,7 @@ p {
   width: 1240px;
   margin: auto;
   padding-top: 24px;
+
   .subtitle_tags span {
     font-size: 14px;
     margin-right: 10px;
@@ -85,9 +95,11 @@ p {
   width: 1240px;
   margin: auto;
   padding-top: 24px;
+
   .description_content {
     width: 582px;
     border-radius: 0px 0px 5px 5px;
+
     &-txt {
       background: #f6f6f6;
       border-radius: 0px 0px 5px 5px;
@@ -98,11 +110,13 @@ p {
     }
   }
 }
+
 .description_content-txt span {
   display: flex;
   flex-direction: column;
   padding-bottom: 3px;
 }
+
 .description_content-animation {
   display: flex;
   align-items: center;
@@ -110,17 +124,20 @@ p {
   background-color: #ff6060;
   padding: 10px 20px 10px 10px;
   border-radius: 5px;
+
   .description_content-animation--title {
     margin: 0;
     font-size: 18px;
   }
-}
-.description_content-animation--ico {
-  cursor: pointer;
-  color: white;
-  font-size: 32px;
-  transition: transform 0.1s ease-in-out;
-}
-.description_content-animation--ico.expanded {
-  transform: rotate(-180deg);
+
+  .description_content-animation--ico {
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .description_content-animation--ico.expanded {
+    transform: rotate(-180deg);
+  }
 }

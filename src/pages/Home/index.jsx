@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import background from "../../assets/images/background01.png";
 import "../../assets/css/Styles.css";
 import jsonData from "../../assets/datas/Logements.json";
+import Cards from "../../components/Cards";
 
 function Home() {
   const data = jsonData;
@@ -15,16 +16,12 @@ function Home() {
       {data && (
         <div className="card">
           {data.map((item) => (
-            <Link key={item.id} to={`/places/${item.id}`}>
-              <div className="card_detail">
-                <img
-                  className="card_detail-img"
-                  src={item.cover}
-                  alt={item.title}
-                />
-                <h3 className="card_detail-txt">{item.title}</h3>
-              </div>
-            </Link>
+            <Cards
+              key={item.id}
+              id={item.id}
+              cover={item.cover}
+              title={item.title}
+            />
           ))}
         </div>
       )}
