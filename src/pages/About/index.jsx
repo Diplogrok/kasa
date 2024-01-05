@@ -22,22 +22,22 @@ function About() {
         <img src={background} alt="" className="background_img" />
       </div>
       {data && (
-        <div className="about">
+        <div className="details">
           {data.map((about, index) => (
-            <div className="about_container" key={about.id}>
+            <div className="details_container" key={about.id}>
               <div
-                className="about_container-animation"
+                className="details_container-animation"
                 onClick={() => handleIconClick(index)}>
-                <h3 className="about_container-animation--title">
+                <h3 className="details_container-animation--title">
                   {about.title}
                 </h3>
                 <i
-                  className={`fa-solid fa-chevron-up about_container-animation--ico ${
+                  className={`fa-solid fa-chevron-up details_container-animation--ico ${
                     expandedItems[index] ? "expanded" : ""
                   }`}></i>
               </div>
               {expandedItems[index] && (
-                <p className="about_container-txt">{about.description}</p>
+                <p className="details_container-txt">{about.description}</p>
               )}
             </div>
           ))}
