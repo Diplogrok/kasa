@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Rating extends Component {
-  renderStars() {
-    const { rating } = this.props;
+const Rating = ({ rating }) => {
+  const renderStars = () => {
     const fullStars = Math.round(rating);
     const stars = [];
 
@@ -16,11 +15,9 @@ class Rating extends Component {
     }
 
     return stars;
-  }
+  };
 
-  render() {
-    return <div className="subtitle_ranking">{this.renderStars()}</div>;
-  }
-}
+  return <div className="subtitle_ranking">{renderStars()}</div>;
+};
 
 export default Rating;
