@@ -3,6 +3,8 @@ p {
 }
 
 .caroussel {
+  max-width: 1240px;
+  margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -10,8 +12,9 @@ p {
 }
 .caroussel .caroussel_img {
   border-radius: 25px;
-  width: 1240px;
-  height: 415px;
+  max-width: 1240px;
+  width: 100%;
+  max-height: 415px;
   object-fit: cover;
   padding-bottom: 20px;
 }
@@ -19,13 +22,20 @@ p {
   cursor: pointer;
   position: absolute;
   color: white;
-  font-size: 80px;
+  font-size: 4vw;
 }
 .caroussel .left {
-  right: 1500px;
+  right: 5%;
 }
 .caroussel .right {
-  left: 1500px;
+  left: 5%;
+}
+
+.imagecount {
+  position: absolute;
+  top: 85%;
+  color: #fff;
+  font-size: 24px;
 }
 
 .container,

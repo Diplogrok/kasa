@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../../assets/images/background01.png";
 import "../../assets/css/Styles.css";
-import jsonData from "../../assets/datas/Logements.json";
+import jsonData from "../../assets/datas/Places.json";
 import Cards from "../../components/Cards";
 
 function Home() {
