@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import jsonData from "../../assets/datas/Places.json";
 import "../../assets/css/Places.css";
 import Slideshow from "../../components/Slideshow";
@@ -7,11 +8,18 @@ import Tags from "../../components/Tags";
 import Rating from "../../components/Rating";
 
 function Places() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const selectedPlace = jsonData.find((item) => item.id === id);
 
+  useEffect(() => {
+    if (!selectedPlace) {
+      navigate("/Error");
+    }
+  }, [selectedPlace, navigate]);
+
   if (!selectedPlace) {
-    return <div>Place not found</div>;
+    return null;
   }
 
   return (

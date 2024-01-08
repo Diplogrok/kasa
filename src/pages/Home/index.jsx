@@ -1,4 +1,3 @@
-import React from "react";
 import background from "../../assets/images/background01.png";
 import "../../assets/css/Styles.css";
 import jsonData from "../../assets/datas/Places.json";
