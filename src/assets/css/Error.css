@@ -1,0 +1,24 @@
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
+  margin-bottom: 139px;
+}
+.error_title {
+  margin: 89px 0px 139px 0px;
+  font-size: 288px;
+}
+.error_subtitle {
+  font-size: 36px;
+  margin: 0px 0px 139px 0px;
+}
+
+a {
+  font-size: 18px;
+  color: #ff6060;
+}
+a.active {
+  color: #ff6060;
+  text-decoration: underline;
+}/*# sourceMappingURL=Error.css.map */

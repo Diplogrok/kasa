@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../../assets/css/Error.css";
 
 function Error() {
   return (
@@ -7,9 +8,9 @@ function Error() {
       <p className="error_subtitle">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <Link to="/" className="error_link">
+      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
         Retourner sur la page d'accueil
-      </Link>
+      </NavLink>
     </div>
   );
 }

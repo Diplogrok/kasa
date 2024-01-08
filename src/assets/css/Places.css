@@ -16,7 +16,7 @@ p {
   width: 100%;
   max-height: 415px;
   object-fit: cover;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .caroussel .caroussel_ico {
   cursor: pointer;
