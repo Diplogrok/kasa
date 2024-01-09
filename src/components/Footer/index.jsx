@@ -1,5 +1,7 @@
+import React from "react";
 import "../../assets/css/Footer.css";
-function Footer() {
+
+const Footer = () => {
   return (
     <div className="footer">
       <svg
@@ -43,6 +45,6 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

@@ -3,7 +3,7 @@ import "../../assets/css/Header.css";
 import logo from "../../assets/images/Logo.svg";
 import { NavLink } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
     <nav className="navbar">
       <img src={logo} alt="" className="navbar_logo" />
@@ -26,6 +26,6 @@ function Header() {
       </div>
     </nav>
   );
-}
+};
 
 export default Header;

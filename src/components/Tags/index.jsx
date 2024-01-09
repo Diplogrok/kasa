@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tags({ tags }) {
+const Tags = ({ tags }) => {
   return (
     <div className="subtitle_tags">
       {tags.map((tag, index) => (
@@ -8,6 +8,6 @@ function Tags({ tags }) {
       ))}
     </div>
   );
-}
+};
 
 export default Tags;
