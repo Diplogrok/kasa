@@ -1,0 +1,39 @@
+@import "../../Variables.scss";
+
+.caroussel {
+  max-width: 1240px;
+  margin: auto;
+  position: relative;
+  @include center;
+
+  .caroussel_img {
+    border-radius: 25px;
+    max-width: 1240px;
+    width: 100%;
+    max-height: 415px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .caroussel_ico {
+    cursor: pointer;
+    position: absolute;
+    color: $text-color;
+    font-size: 4vw;
+  }
+
+  .left {
+    right: 5%;
+  }
+
+  .right {
+    left: 5%;
+  }
+}
+
+.imagecount {
+  position: absolute;
+  top: 85%;
+  color: $text-color;
+  font-size: 24px;
+}

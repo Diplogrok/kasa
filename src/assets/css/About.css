@@ -1,3 +1,5 @@
+/* Typo-Colors */
+/* Mixin */
 .details {
   display: flex;
   flex-direction: column;
@@ -23,7 +25,7 @@
 .details .description_content-animation--ico {
   cursor: pointer;
   background-color: #ff6060;
-  color: white;
+  color: #fff;
   font-size: 32px;
   transition: transform 0.1s ease-in-out;
 }

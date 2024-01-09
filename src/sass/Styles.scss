@@ -1,57 +1,7 @@
+@import "../sass/Variables.scss";
+
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-}
-.background {
-  max-width: 1440px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 43px;
-  .background_img {
-    border-radius: 25px;
-    object-fit: cover;
-    width: 1240px;
-    height: 223px;
-    filter: saturate(80%) brightness(70%) contrast(110%);
-  }
-}
-.background_txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: #f6f6f6;
-  border-radius: 25px;
-  max-width: 1240px;
-  margin: auto;
-  padding-bottom: 46px;
-  .card_detail {
-    position: relative;
-    margin: 50px 30px 0px 25px;
-    width: 300px;
-    height: 300px;
-    &-txt {
-      position: absolute;
-      top: 75%;
-      left: 5%;
-      color: white;
-      font-size: 18px;
-    }
-  }
-}
-.card_detail-img {
-  border-radius: 10px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-  filter: saturate(80%) brightness(70%) contrast(110%);
+  font-family: $primary-typo;
+  color: $text-color;
 }

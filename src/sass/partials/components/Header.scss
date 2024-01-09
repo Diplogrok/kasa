@@ -1,6 +1,8 @@
+@import "../../Variables.scss";
+
 .navbar {
   margin: auto;
-  width: 1240px;
+  max-width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,15 +12,14 @@
   }
 }
 .navbar_links-detail {
-  padding: 0px 57px 0px 0px;
-
+  margin-inline-start: 57px;
   a {
     font-size: 24px;
     text-decoration: none;
-    color: #ff6060;
+    color: $primary-color;
 
     &.active {
-      color: #ff6060;
+      color: $primary-color;
       text-decoration: underline;
     }
   }

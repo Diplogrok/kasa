@@ -1,0 +1,16 @@
+/* Typo-Colors */
+$primary-typo: "Montserrat", sans-serif;
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+$text-color: #fff;
+$empty-star: rgb(227, 227, 227);
+$background-footer: #000;
+$image-filter: saturate(80%) brightness(70%) contrast(110%);
+
+/* Mixin */
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import jsonData from "../../assets/datas/Places.json";
+import "../../assets/css/Styles.css";
+import "../../assets/css/Slideshow.css";
 import "../../assets/css/Places.css";
+import "../../assets/css/Tags.css";
+import "../../assets/css/Rating.css";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
 import Tags from "../../components/Tags";

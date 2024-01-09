@@ -1,3 +1,5 @@
+@import "../../Variables.scss";
+
 .details {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,7 @@
     &-animation {
       padding: 15px;
       border-radius: 5px;
-      background: #ff6060;
+      background: $primary-color;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -23,8 +25,8 @@
 
       &--ico {
         cursor: pointer;
-        background-color: #ff6060;
-        color: white;
+        background-color: $primary-color;
+        color: $text-color;
         font-size: 32px;
         transition: transform 0.1s ease-in-out;
       }
@@ -40,11 +42,11 @@
       border-radius: 0px 0px 5px 5px;
       margin: 0px;
       font-size: 18px;
-      color: #ff6060;
+      color: $primary-color;
       padding: 15px;
       display: flex;
       flex-wrap: wrap;
-      background: #f6f6f6;
+      background: $secondary-color;
     }
   }
 }

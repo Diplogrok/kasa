@@ -1,0 +1,9 @@
+/* Typo-Colors */
+/* Mixin */
+.subtitle_ranking .fa-star {
+  font-size: 24px;
+  color: rgb(227, 227, 227);
+}
+.subtitle_ranking .filled {
+  color: #ff6060;
+}/*# sourceMappingURL=Rating.css.map */

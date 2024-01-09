@@ -1,0 +1,16 @@
+@import "../../Variables.scss";
+
+.background {
+  max-width: 1440px;
+  margin: auto;
+  @include center;
+  position: relative;
+  margin-bottom: 43px;
+  .background_img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 1240px;
+    height: 223px;
+    filter: $image-filter;
+  }
+}

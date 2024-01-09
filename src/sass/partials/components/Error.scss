@@ -1,8 +1,9 @@
+@import "../../Variables.scss";
+
 .error {
-  display: flex;
-  align-items: center;
+  @include center;
   flex-direction: column;
-  color: #ff6060;
+  color: $primary-color;
   margin-bottom: 139px;
   &_title {
     margin: 89px 0px 139px 0px;
@@ -15,10 +16,10 @@
 }
 a {
   font-size: 18px;
-  color: #ff6060;
+  color: $primary-color;
 
   &.active {
-    color: #ff6060;
+    color: $primary-color;
     text-decoration: underline;
   }
 }

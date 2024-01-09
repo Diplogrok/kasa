@@ -1,5 +1,8 @@
+/* Typo-Colors */
+/* Mixin */
 .error {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #ff6060;

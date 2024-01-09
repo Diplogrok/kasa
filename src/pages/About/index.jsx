@@ -1,3 +1,5 @@
+import React from "react";
+import Background from "../../components/Background";
 import "../../assets/css/Styles.css";
 import "../../assets/css/About.css";
 import background from "../../assets/images/background02.png";
@@ -9,9 +11,7 @@ function About() {
 
   return (
     <div>
-      <div className="background">
-        <img src={background} alt="" className="background_img" />
-      </div>
+      <Background image={background}></Background>
       {data && (
         <div className="details">
           {data.map((about) => (

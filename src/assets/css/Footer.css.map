@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/partials/Footer.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA","file":"Footer.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/Variables.scss","../../sass/partials/components/Footer.scss"],"names":[],"mappings":"AAAA;AASA;ACPA;EACE;EACA;EACA,kBDCkB;EAMlB;EACA;EACA;ECPA;;AAEA;EACE;EACA","file":"Footer.css"}

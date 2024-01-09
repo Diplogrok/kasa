@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Places from "./pages/Places";
-import Error from "./pages/Error";
+import Error from "./pages/ErrorPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -13,7 +13,6 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />

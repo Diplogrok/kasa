@@ -1,0 +1,12 @@
+@import "../../Variables.scss";
+
+.subtitle_ranking {
+  .fa-star {
+    font-size: 24px;
+    color: $empty-star;
+  }
+
+  .filled {
+    color: $primary-color;
+  }
+}
