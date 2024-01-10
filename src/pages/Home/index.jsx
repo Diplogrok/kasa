@@ -1,6 +1,7 @@
 import React from "react";
 import Background from "../../components/Background";
 import background from "../../assets/images/background01.png";
+import "../../assets/css/Background.css";
 import "../../assets/css/Styles.css";
 import "../../assets/css/Cards.css";
 import "../../assets/css/Home.css";

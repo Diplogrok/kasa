@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../../components/Background";
+import "../../assets/css/Background.css";
 import "../../assets/css/Styles.css";
 import "../../assets/css/About.css";
 import background from "../../assets/images/background02.png";

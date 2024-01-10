@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
-import "../../assets/css/Error.css";
 
-function Error() {
+const Error = () => {
   return (
     <div className="error">
       <h1 className="error_title">404</h1>
@@ -13,6 +12,6 @@ function Error() {
       </NavLink>
     </div>
   );
-}
+};
 
 export default Error;

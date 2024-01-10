@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/css/Background.css";
 
 const Background = ({ image, children }) => (
   <div className="background">
