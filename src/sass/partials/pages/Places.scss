@@ -89,3 +89,37 @@
     transform: rotate(-180deg);
   }
 }
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .container,
+  .location {
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-color;
+
+    .container_title {
+      font-size: 20px;
+      margin: 0px;
+    }
+
+    .container_host {
+      @include center;
+
+      .container_host-name {
+        padding-right: 10px;
+      }
+
+      .container_host-picture {
+        width: 64px;
+        border-radius: 90px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone */
+}

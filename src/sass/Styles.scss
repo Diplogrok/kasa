@@ -5,3 +5,11 @@ body {
   font-family: $primary-typo;
   color: $text-color;
 }
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone */
+}

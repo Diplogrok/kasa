@@ -23,4 +23,29 @@
 .navbar_links-detail a.active {
   color: #ff6060;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .navbar {
+    max-width: 992px;
+    padding: 20px 20px 50px 20px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .navbar_logo {
+    width: 145px;
+  }
+  .navbar {
+    max-width: 600px;
+    padding: 20px 20px 27px 20px;
+  }
+  .navbar_links-detail {
+    margin-inline-start: 26px;
+  }
+  .navbar_links-detail a {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Header.css.map */

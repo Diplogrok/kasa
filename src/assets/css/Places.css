@@ -85,4 +85,40 @@
 }
 .description_content-animation .description_content-animation--ico.expanded {
   transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .container,
+  .location {
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff6060;
+  }
+  .container .container_title,
+  .location .container_title {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .container .container_host,
+  .location .container_host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .container_host .container_host-name,
+  .location .container_host .container_host-name {
+    padding-right: 10px;
+  }
+  .container .container_host .container_host-picture,
+  .location .container_host .container_host-picture {
+    width: 64px;
+    border-radius: 90px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
 }/*# sourceMappingURL=Places.css.map */

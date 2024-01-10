@@ -15,7 +15,7 @@
   max-width: 1240px;
   position: relative;
   width: 300px;
-  height: 300px;
+  max-height: 300px;
 }
 .card .card_detail-txt {
   max-width: 300px;
@@ -32,4 +32,32 @@
   width: 300px;
   height: 300px;
   filter: saturate(80%) brightness(70%) contrast(110%);
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .card {
+    margin: 43px 20px 50px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .card {
+    background: #fff;
+    max-width: 600px;
+    padding: 0px;
+  }
+  .card .card_detail {
+    margin: 10px;
+    max-width: 600px;
+    min-width: 335px;
+    min-height: 225px;
+  }
+  .card .card_detail-txt {
+    top: 68%;
+  }
+  .card_detail-img {
+    min-width: 335px;
+    max-height: 225px;
+  }
 }/*# sourceMappingURL=Cards.css.map */
