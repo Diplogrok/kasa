@@ -24,4 +24,31 @@ a {
 a.active {
   color: #ff6060;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .error_subtitle {
+    width: 500px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .error {
+    margin-bottom: 113px;
+  }
+  .error_title {
+    margin: 89px 0px 113px 0px;
+    font-size: 96px;
+  }
+  .error_subtitle {
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 0px 113px 0px;
+  }
+  a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Error.css.map */

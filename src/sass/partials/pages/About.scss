@@ -50,3 +50,35 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .details {
+    .description_content {
+      width: 728px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .details {
+    .description_content {
+      width: 335px;
+      padding-bottom: 20px;
+
+      &-animation {
+        padding: 5px;
+        border-radius: 5px;
+
+        &--title {
+          font-size: 13px;
+        }
+      }
+      &-txt {
+        font-size: 13px;
+        padding: 0px 10px 0px 10px;
+      }
+    }
+  }
+}

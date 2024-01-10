@@ -23,3 +23,33 @@ a {
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .error {
+    &_subtitle {
+      width: 500px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .error {
+    margin-bottom: 113px;
+    &_title {
+      margin: 89px 0px 113px 0px;
+      font-size: 96px;
+    }
+    &_subtitle {
+      width: 200px;
+      text-align: center;
+      font-size: 18px;
+      margin: 0px 0px 113px 0px;
+    }
+  }
+  a {
+    font-size: 14px;
+  }
+}

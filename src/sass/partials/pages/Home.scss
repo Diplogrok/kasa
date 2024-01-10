@@ -9,8 +9,10 @@
 
 @media screen and (max-width: 992px) {
   /* For tablet: */
+  .background_txt {
+    font-size: 30px;
+  }
 }
-
 @media screen and (max-width: 600px) {
   /* For phone */
   .background_txt {
