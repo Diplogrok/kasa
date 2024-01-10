@@ -25,14 +25,10 @@
 
       &--ico {
         cursor: pointer;
-        background-color: $primary-color;
         color: $text-color;
-        font-size: 32px;
+        font-size: 24px;
         transition: transform 0.1s ease-in-out;
-      }
-
-      &.expanded {
-        .description_content--ico {
+        &.expanded {
           transform: rotate(-180deg);
         }
       }
@@ -44,8 +40,6 @@
       font-size: 18px;
       color: $primary-color;
       padding: 15px;
-      display: flex;
-      flex-wrap: wrap;
       background: $secondary-color;
     }
   }

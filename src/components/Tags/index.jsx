@@ -2,7 +2,7 @@ import React from "react";
 
 const Tags = ({ tags }) => {
   return (
-    <div className="subtitle_tags">
+    <div className="container_left-tags">
       {tags.map((tag, index) => (
         <span key={index}>{tag}</span>
       ))}

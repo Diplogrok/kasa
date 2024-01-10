@@ -1,9 +1,16 @@
 /* Typo-Colors */
 /* Mixin */
-.subtitle_ranking .fa-star {
+.container_right-rating .fa-star {
   font-size: 24px;
   color: rgb(227, 227, 227);
 }
-.subtitle_ranking .filled {
+.container_right-rating .filled {
   color: #ff6060;
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone: */
+  .container_right-rating .fa-star {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Rating.css.map */

@@ -4,11 +4,4 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-}
-
-@media screen and (max-width: 992px) {
-  /* For tablet: */
-}
-@media screen and (max-width: 600px) {
-  /* For phone */
 }/*# sourceMappingURL=Styles.css.map */

@@ -24,12 +24,11 @@
 }
 .details .description_content-animation--ico {
   cursor: pointer;
-  background-color: #ff6060;
   color: #fff;
-  font-size: 32px;
+  font-size: 24px;
   transition: transform 0.1s ease-in-out;
 }
-.details .description_content-animation.expanded .description_content--ico {
+.details .description_content-animation--ico.expanded {
   transform: rotate(-180deg);
 }
 .details .description_content-txt {
@@ -38,8 +37,6 @@
   font-size: 18px;
   color: #ff6060;
   padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
   background: #f6f6f6;
 }
 

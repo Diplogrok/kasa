@@ -1,3 +1,33 @@
-p {
+/* Typo-Colors */
+/* Mixin */
+.description {
+  display: flex;
+}
+.description .description_content-animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+.description .description_content-animation--title {
+  margin: 0;
+  font-weight: 500;
+}
+.description .description_content-animation--ico {
+  cursor: pointer;
+  color: #fff;
+  font-size: 32px;
+  transition: transform 0.1s ease-in-out;
+}
+.description .description_content-animation--ico.expanded {
+  transform: rotate(-180deg);
+}
+.description .description_content-txt {
+  background: #f6f6f6;
+  border-radius: 0px 0px 5px 5px;
+  margin: 0px;
   font-size: 18px;
+  color: #ff6060;
+  padding: 15px;
 }/*# sourceMappingURL=Collapse.css.map */

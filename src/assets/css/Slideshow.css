@@ -1,6 +1,6 @@
 /* Typo-Colors */
 /* Mixin */
-.caroussel {
+.carousel {
   max-width: 1240px;
   margin: auto;
   position: relative;
@@ -8,24 +8,26 @@
   justify-content: center;
   align-items: center;
 }
-.caroussel .caroussel_img {
+.carousel .carousel_img {
   border-radius: 25px;
-  max-width: 1240px;
-  width: 100%;
-  max-height: 415px;
+  width: 1240px;
+  height: 415px;
   object-fit: cover;
-  margin-bottom: 20px;
 }
-.caroussel .caroussel_ico {
+.carousel .carousel_ico {
   cursor: pointer;
   position: absolute;
   color: #fff;
-  font-size: 4vw;
+  font-size: 70px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.caroussel .left {
+
+.left {
   right: 5%;
 }
-.caroussel .right {
+
+.right {
   left: 5%;
 }
 
@@ -34,4 +36,30 @@
   top: 85%;
   color: #fff;
   font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .carousel {
+    margin: 0px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .carousel {
+    margin: 0px 20px 0px 20px;
+  }
+  .carousel .carousel_img {
+    border-radius: 10px;
+    min-width: 335px;
+    height: 255px;
+  }
+  .carousel .carousel_ico {
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .imagecount {
+    display: none;
+  }
 }/*# sourceMappingURL=Slideshow.css.map */

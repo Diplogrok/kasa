@@ -1,6 +1,6 @@
 @import "../../Variables.scss";
 
-.subtitle_ranking {
+.container_right-rating {
   .fa-star {
     font-size: 24px;
     color: $empty-star;
@@ -8,5 +8,14 @@
 
   .filled {
     color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone: */
+  .container_right-rating {
+    .fa-star {
+      font-size: 14px;
+    }
   }
 }

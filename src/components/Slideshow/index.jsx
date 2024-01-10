@@ -19,26 +19,26 @@ const Slideshow = ({ images }) => {
   const imageCount = `${currentImageIndex + 1}/${images.length}`;
 
   return (
-    <div className="caroussel">
+    <div className="carousel">
       {images.length > 1 && (
         <>
           <i
-            className="fa-solid fa-chevron-left caroussel_ico right"
+            className="fa-solid fa-chevron-left carousel_ico right"
             onClick={() => handleImageChange("prev")}></i>
           <img
-            className="caroussel_img"
+            className="carousel_img"
             src={images[currentImageIndex]}
             alt={`Slide ${currentImageIndex + 1}`}
           />
           <i
-            className="fa-solid fa-chevron-right caroussel_ico left"
+            className="fa-solid fa-chevron-right carousel_ico left"
             onClick={() => handleImageChange("next")}></i>
           {imageCount && <div className="imagecount">{imageCount}</div>}
         </>
       )}
       {images.length === 1 && (
         <img
-          className="caroussel_img"
+          className="carousel_img"
           src={images[0]}
           alt={`Slide ${currentImageIndex + 1}`}
         />

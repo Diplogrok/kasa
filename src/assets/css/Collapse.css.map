@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/partials/components/Collapse.scss"],"names":[],"mappings":"AAAA;EACI","file":"Collapse.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/Variables.scss","../../sass/partials/components/Collapse.scss"],"names":[],"mappings":"AAAA;AAUA;ACRA;EACE;;AAEE;EACE;EACA;EACA;EACA,kBDPU;ECQV;;AAEA;EACE;EACA;;AAEF;EACE;EACA,ODbK;ECcL;EACA;;AACA;EACE;;AAKN;EACE,YDzBY;EC0BZ;EACA;EACA;EACA,OD9BU;EC+BV","file":"Collapse.css"}

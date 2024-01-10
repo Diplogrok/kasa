@@ -30,28 +30,36 @@ function Places() {
     <div>
       <Slideshow images={selectedPlace.pictures} />
       <div className="container">
-        <h1 className="container_title">{selectedPlace.title}</h1>
-        <div className="container_host">
-          <p className="container_host-name">{selectedPlace.host.name}</p>
-          <img
-            className="container_host-picture"
-            src={selectedPlace.host.picture}
-            alt={selectedPlace.host.name}
-          />
+        <div className="container_left">
+          <h1 className="container_left-title">{selectedPlace.title}</h1>
+          <p className="container_left-location">{selectedPlace.location}</p>
+          <div className="container_left-tags">
+            <Tags tags={selectedPlace.tags} />
+          </div>
+        </div>
+        <div className="container_right">
+          <div className="container_right-host">
+            <p className="container_right-host--name">
+              {selectedPlace.host.name}
+            </p>
+            <img
+              className="container_right-host--picture"
+              src={selectedPlace.host.picture}
+              alt={selectedPlace.host.name}
+            />
+          </div>
+          <div className="container_right-rating">
+            <Rating rating={selectedPlace.rating} />
+          </div>
         </div>
       </div>
-      <p className="location">{selectedPlace.location}</p>
-      <div className="subtitle">
-        <Tags tags={selectedPlace.tags} />
-        <Rating rating={selectedPlace.rating} />
-      </div>
+
       <div className="description">
         <Collapse title="Description">
           <div className="description_content-txt">
             {selectedPlace.description}
           </div>
         </Collapse>
-
         <Collapse title="Équipements">
           <div className="description_content-txt">
             {selectedPlace.equipments.map((tag, index) => (
