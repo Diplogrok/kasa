@@ -15,9 +15,9 @@ function About() {
       <Background image={background}></Background>
       {data && (
         <div className="details">
-          {data.map((about) => (
-            <Collapse key={about.id} title={about.title}>
-              <p className="details_container-txt">{about.description}</p>
+          {data.map((item) => (
+            <Collapse key={item.id} title={item.title}>
+              <p className="details_container-txt">{item.description}</p>
             </Collapse>
           ))}
         </div>

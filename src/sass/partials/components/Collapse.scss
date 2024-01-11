@@ -17,7 +17,7 @@
       &--ico {
         cursor: pointer;
         color: $text-color;
-        font-size: 32px;
+        font-size: 24px;
         transition: transform 0.1s ease-in-out;
         &.expanded {
           transform: rotate(-180deg);
