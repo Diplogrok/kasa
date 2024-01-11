@@ -1,37 +1,175 @@
 @import "../../Variables.scss";
 
-.description {
-  display: flex;
-  .description_content {
-    &-animation {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: $primary-color;
-      border-radius: 5px;
+.about_page {
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      &--title {
-        margin: 0;
-        font-weight: 500;
+    .description_content {
+      width: 1023px;
+      padding-bottom: 30px;
+
+      &-animation {
+        padding: 15px;
+        border-radius: 5px;
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--title {
+          margin: 0;
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        &--ico {
+          cursor: pointer;
+          color: $text-color;
+          font-size: 24px;
+          transition: transform 0.1s ease-in-out;
+          &.expanded {
+            transform: rotate(-180deg);
+          }
+        }
       }
-      &--ico {
-        cursor: pointer;
-        color: $text-color;
-        font-size: 24px;
-        transition: transform 0.1s ease-in-out;
-        &.expanded {
-          transform: rotate(-180deg);
+
+      &-txt {
+        border-radius: 0px 0px 5px 5px;
+        margin: 0px;
+        font-size: 18px;
+        color: $primary-color;
+        padding: 15px;
+        background: $secondary-color;
+      }
+    }
+  }
+}
+
+.places_page {
+  .description {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 24px;
+
+    .description_content {
+      width: 582px;
+
+      &-animation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+        padding: 10px 20px 10px 10px;
+        border-radius: 5px;
+
+        &--title {
+          margin: 0;
+          font-weight: 500;
+        }
+        &--ico {
+          cursor: pointer;
+          color: $text-color;
+          font-size: 32px;
+          transition: transform 0.1s ease-in-out;
+          &.expanded {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+
+      &-txt {
+        background: $secondary-color;
+        border-radius: 0px 0px 5px 5px;
+        margin: 0px;
+        font-size: 18px;
+        color: $primary-color;
+        padding: 15px;
+      }
+    }
+  }
+
+  .description_content-txt span {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .about_page {
+    .description {
+      .description_content {
+        width: 728px;
+      }
+    }
+  }
+
+  .places_page {
+    .description {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      margin: 0px 20px 0px 20px;
+
+      .description_content {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .about_page {
+    .description {
+      .description_content {
+        width: 335px;
+        padding-bottom: 20px;
+
+        &-animation {
+          padding: 5px;
+          border-radius: 5px;
+
+          &--title {
+            font-size: 13px;
+          }
+        }
+        &-txt {
+          font-size: 13px;
+          padding: 0px 10px 0px 10px;
         }
       }
     }
+  }
 
-    &-txt {
-      background: $secondary-color;
-      border-radius: 0px 0px 5px 5px;
-      margin: 0px;
-      font-size: 18px;
-      color: $primary-color;
-      padding: 15px;
+  .places_page {
+    .description {
+      display: flex;
+      flex-direction: column;
+      padding-top: 13px;
+      max-width: 100%;
+      margin: 0px 20px 0px 20px;
+      .description_content {
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+        padding-bottom: 20px;
+        &-animation {
+          padding: 5px 10px 5px 10px;
+          &--title {
+            font-size: 13px;
+          }
+        }
+        &-txt {
+          font-size: 13px;
+          padding: 5px 10px 5px 10px;
+        }
+      }
     }
   }
 }

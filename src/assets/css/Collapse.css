@@ -1,33 +1,143 @@
 /* Typo-Colors */
 /* Mixin */
-.description {
+.about_page .description {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.description .description_content-animation {
+.about_page .description .description_content {
+  width: 1023px;
+  padding-bottom: 30px;
+}
+.about_page .description .description_content-animation {
+  padding: 15px;
+  border-radius: 5px;
+  background: #ff6060;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ff6060;
-  border-radius: 5px;
 }
-.description .description_content-animation--title {
+.about_page .description .description_content-animation--title {
   margin: 0;
+  font-size: 24px;
   font-weight: 500;
 }
-.description .description_content-animation--ico {
+.about_page .description .description_content-animation--ico {
   cursor: pointer;
   color: #fff;
   font-size: 24px;
   transition: transform 0.1s ease-in-out;
 }
-.description .description_content-animation--ico.expanded {
+.about_page .description .description_content-animation--ico.expanded {
   transform: rotate(-180deg);
 }
-.description .description_content-txt {
+.about_page .description .description_content-txt {
+  border-radius: 0px 0px 5px 5px;
+  margin: 0px;
+  font-size: 18px;
+  color: #ff6060;
+  padding: 15px;
+  background: #f6f6f6;
+}
+
+.places_page .description {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 24px;
+}
+.places_page .description .description_content {
+  width: 582px;
+}
+.places_page .description .description_content-animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+}
+.places_page .description .description_content-animation--title {
+  margin: 0;
+  font-weight: 500;
+}
+.places_page .description .description_content-animation--ico {
+  cursor: pointer;
+  color: #fff;
+  font-size: 32px;
+  transition: transform 0.1s ease-in-out;
+}
+.places_page .description .description_content-animation--ico.expanded {
+  transform: rotate(-180deg);
+}
+.places_page .description .description_content-txt {
   background: #f6f6f6;
   border-radius: 0px 0px 5px 5px;
   margin: 0px;
   font-size: 18px;
   color: #ff6060;
   padding: 15px;
+}
+.places_page .description_content-txt span {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3px;
+}
+
+@media screen and (max-width: 992px) {
+  /* For tablet: */
+  .about_page .description .description_content {
+    width: 728px;
+  }
+  .places_page .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+  .places_page .description .description_content {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For phone */
+  .about_page .description .description_content {
+    width: 335px;
+    padding-bottom: 20px;
+  }
+  .about_page .description .description_content-animation {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .about_page .description .description_content-animation--title {
+    font-size: 13px;
+  }
+  .about_page .description .description_content-txt {
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+  }
+  .places_page .description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    max-width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+  .places_page .description .description_content {
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 20px;
+  }
+  .places_page .description .description_content-animation {
+    padding: 5px 10px 5px 10px;
+  }
+  .places_page .description .description_content-animation--title {
+    font-size: 13px;
+  }
+  .places_page .description .description_content-txt {
+    font-size: 13px;
+    padding: 5px 10px 5px 10px;
+  }
 }/*# sourceMappingURL=Collapse.css.map */

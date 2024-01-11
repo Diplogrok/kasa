@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import jsonData from "../../assets/datas/Places.json";
 import "../../assets/css/Styles.css";
 import "../../assets/css/Slideshow.css";
+import "../../assets/css/Collapse.css";
 import "../../assets/css/Places.css";
 import "../../assets/css/Tags.css";
 import "../../assets/css/Rating.css";
@@ -27,7 +28,7 @@ function Places() {
   }
 
   return (
-    <div>
+    <div className="places_page">
       <Slideshow images={selectedPlace.pictures} />
       <div className="container">
         <div className="container_left">
