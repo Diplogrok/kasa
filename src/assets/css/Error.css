@@ -1,5 +1,13 @@
 /* Typo-Colors */
 /* Mixin */
+/* Typo-Colors */
+/* Mixin */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 .error {
   display: flex;
   justify-content: center;

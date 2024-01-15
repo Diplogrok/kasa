@@ -1,5 +1,11 @@
 /* Typo-Colors */
 /* Mixin */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 .footer {
   margin-top: 50px;
   padding-top: 66px;

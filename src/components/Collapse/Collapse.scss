@@ -1,29 +1,20 @@
-@import "../../Variables.scss";
+@import "../../sass/Styles.scss";
 
-.about_page {
+.about_page,
+.places_page {
   .description {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
     .description_content {
-      width: 1023px;
-      padding-bottom: 30px;
-
       &-animation {
-        padding: 15px;
         border-radius: 5px;
         background: $primary-color;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         &--title {
           margin: 0;
-          font-size: 24px;
           font-weight: 500;
         }
-
         &--ico {
           cursor: pointer;
           color: $text-color;
@@ -34,7 +25,6 @@
           }
         }
       }
-
       &-txt {
         border-radius: 0px 0px 5px 5px;
         margin: 0px;
@@ -47,9 +37,28 @@
   }
 }
 
+.about_page {
+  .description {
+    flex-direction: column;
+    align-items: center;
+
+    .description_content {
+      width: 1023px;
+      padding-bottom: 30px;
+
+      &-animation {
+        padding: 15px;
+
+        &--title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
 .places_page {
   .description {
-    display: flex;
     justify-content: space-between;
     max-width: 1240px;
     margin: auto;
@@ -59,39 +68,10 @@
       width: 582px;
 
       &-animation {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $primary-color;
         padding: 10px 20px 10px 10px;
-        border-radius: 5px;
-
-        &--title {
-          margin: 0;
-          font-weight: 500;
-        }
-        &--ico {
-          cursor: pointer;
-          color: $text-color;
-          font-size: 32px;
-          transition: transform 0.1s ease-in-out;
-          &.expanded {
-            transform: rotate(-180deg);
-          }
-        }
-      }
-
-      &-txt {
-        background: $secondary-color;
-        border-radius: 0px 0px 5px 5px;
-        margin: 0px;
-        font-size: 18px;
-        color: $primary-color;
-        padding: 15px;
       }
     }
   }
-
   .description_content-txt span {
     display: flex;
     flex-direction: column;
@@ -111,7 +91,6 @@
 
   .places_page {
     .description {
-      display: flex;
       flex-direction: column;
       max-width: 100%;
       margin: 0px 20px 0px 20px;
@@ -142,7 +121,7 @@
         }
         &-txt {
           font-size: 13px;
-          padding: 0px 10px 0px 10px;
+          padding: 5px 10px 5px 10px;
         }
       }
     }
@@ -150,7 +129,6 @@
 
   .places_page {
     .description {
-      display: flex;
       flex-direction: column;
       padding-top: 13px;
       max-width: 100%;

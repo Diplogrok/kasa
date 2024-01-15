@@ -1,5 +1,11 @@
 /* Typo-Colors */
 /* Mixin */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;

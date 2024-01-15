@@ -1,3 +1,11 @@
+/* Typo-Colors */
+/* Mixin */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 .background_txt {
   margin: 0;
   font-size: 48px;
