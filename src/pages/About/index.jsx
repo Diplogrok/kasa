@@ -13,8 +13,10 @@ function About() {
   return (
     <div className="about_page">
       <Background image={background}></Background>
+      {/* Vérification de l'existence de données avant le rendu de la section de description */}
       {data && (
         <div className="description">
+          {/* Mapping sur les données pour créer des composants Collapse pour chaque section */}
           {data.map((item) => (
             <Collapse key={item.id} title={item.title}>
               <p className="description_content-txt">{item.description}</p>

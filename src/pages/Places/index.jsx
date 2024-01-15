@@ -13,16 +13,21 @@ import Tags from "../../components/Tags";
 import Rating from "../../components/Rating";
 
 function Places() {
+  // Utilisation du hook `useNavigate` pour la navigation programmatique
   const navigate = useNavigate();
+  // Utilisation du hook `useParams` pour extraire les paramètres
   const { id } = useParams();
   const selectedPlace = jsonData.find((item) => item.id === id);
 
+  // Utilisation du hook `useEffect` pour effectuer une action lors du montage du composant
   useEffect(() => {
+    // Si le lieu n'est pas trouvé, rediriger vers la page d'erreur
     if (!selectedPlace) {
       navigate("/Error");
     }
-  }, [selectedPlace, navigate]);
+  }, [selectedPlace, navigate]); // Dépendance pour s'assurer que le hook est appelé lorsqu'il y a un changement dans `selectedPlace` ou `navigate`
 
+  // Si le lieu n'est pas trouvé, retourner null pour éviter le rendu de la page
   if (!selectedPlace) {
     return null;
   }

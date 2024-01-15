@@ -16,8 +16,10 @@ function Home() {
       <Background image={background}>
         <h1 className="background_txt">Chez vous, partout et ailleurs</h1>
       </Background>
+      {/* Vérification de l'existence de données avant le rendu de la section des cartes */}
       {data && (
         <div className="card">
+          {/* Mapping sur les données pour créer des composants de cartes pour chaque lieu */}
           {data.map((item) => (
             <Cards
               key={item.id}

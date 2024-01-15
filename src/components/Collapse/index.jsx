@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+
+// Définition du composant fonctionnel "Collapse" qui prend les props "title" et "children"
 const Collapse = ({ title, children }) => {
+  // Utilisation du hook useState pour gérer l'état d'expansion du contenu
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // Fonction pour basculer l'état d'expansion
   const toggleCollapse = () => {
     setIsExpanded(!isExpanded);
   };
@@ -15,6 +19,7 @@ const Collapse = ({ title, children }) => {
             isExpanded ? "expanded" : ""
           }`}></i>
       </div>
+      {/* Contenu affiché uniquement si il est étendu */}
       {isExpanded && <div className="description_content-txt">{children}</div>}
     </div>
   );

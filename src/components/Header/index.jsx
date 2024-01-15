@@ -9,6 +9,7 @@ const Header = () => {
       <img src={logo} alt="" className="navbar_logo" />
       <div className="navbar_links">
         <div className="navbar_links-detail">
+          {/* NavLink pour naviguer vers la page d'accueil */}
           <NavLink
             to=""
             className={({ isActive }) => (isActive ? "active" : "")}>
@@ -17,6 +18,7 @@ const Header = () => {
         </div>
 
         <div className="navbar_links-detail">
+          {/* NavLink pour naviguer vers la page "A Propos" */}
           <NavLink
             to="/about"
             className={({ isActive }) => (isActive ? "active" : "")}>

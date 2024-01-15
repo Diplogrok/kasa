@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 
+// Définition du composant fonctionnel "Slideshow" qui prend une prop "images"
 const Slideshow = ({ images }) => {
+  // Utilisation du hook useState pour gérer l'index de l'image actuelle dans le tableau
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Fonction pour changer l'image en fonction de la direction (next ou prev)
   const handleImageChange = (direction) => {
     const lastIndex = images.length - 1;
     let newIndex;
-
+    // Logique pour déterminer le nouvel index en fonction de la direction
     if (direction === "next") {
       newIndex = currentImageIndex === lastIndex ? 0 : currentImageIndex + 1;
     } else {
       newIndex = currentImageIndex === 0 ? lastIndex : currentImageIndex - 1;
     }
-
+    // Mise à jour de l'état avec le nouvel index
     setCurrentImageIndex(newIndex);
   };
 
-  const imageCount = `${currentImageIndex + 1}/${images.length}`;
-
   return (
     <div className="carousel">
+      {/* Vérification si le nombre d'images est supérieur à 1 */}
       {images.length > 1 && (
         <>
           <i
@@ -33,9 +35,15 @@ const Slideshow = ({ images }) => {
           <i
             className="fa-solid fa-chevron-right carousel_ico left"
             onClick={() => handleImageChange("next")}></i>
-          {imageCount && <div className="imagecount">{imageCount}</div>}
+          {/* Affichage du numéro de l'image actuelle */}
+          {images.length > 1 && (
+            <div className="imagecount">
+              {currentImageIndex + 1}/{images.length}
+            </div>
+          )}
         </>
       )}
+      {/* Si le nombre d'images est égal à 1, afficher uniquement cette image */}
       {images.length === 1 && (
         <img
           className="carousel_img"
