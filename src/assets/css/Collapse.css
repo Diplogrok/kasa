@@ -38,6 +38,7 @@ body {
 .places_page .description .description_content-txt {
   border-radius: 0px 0px 5px 5px;
   margin: 0px;
+  font-weight: 500;
   font-size: 18px;
   color: #ff6060;
   padding: 15px;

@@ -9,6 +9,7 @@ body {
 .background_txt {
   margin: 0;
   font-size: 48px;
+  font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;

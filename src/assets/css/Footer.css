@@ -16,6 +16,7 @@ body {
   flex-direction: column;
 }
 .footer .footer_txt {
+  font-weight: 500;
   font-size: 24px;
   margin: 30px 0px 30px 0px;
 }

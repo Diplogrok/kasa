@@ -19,13 +19,16 @@ body {
 .error_title {
   margin: 89px 0px 139px 0px;
   font-size: 288px;
+  font-weight: 700;
 }
 .error_subtitle {
+  font-weight: 500;
   font-size: 36px;
   margin: 0px 0px 139px 0px;
 }
 
 a {
+  font-weight: 500;
   font-size: 18px;
   color: #ff6060;
 }
