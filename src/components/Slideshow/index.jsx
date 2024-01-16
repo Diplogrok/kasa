@@ -5,11 +5,11 @@ const Slideshow = ({ images }) => {
   // Utilisation du hook useState pour gérer l'index de l'image actuelle dans le tableau
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Fonction pour changer l'image en fonction de la direction (next ou prev)
   const handleImageChange = (direction) => {
     const lastIndex = images.length - 1;
-    let newIndex;
+
     // Logique pour déterminer le nouvel index en fonction de la direction
+    let newIndex;
     if (direction === "next") {
       newIndex = currentImageIndex === lastIndex ? 0 : currentImageIndex + 1;
     } else {
@@ -26,7 +26,7 @@ const Slideshow = ({ images }) => {
         <>
           <i
             className="fa-solid fa-chevron-left carousel_ico right"
-            onClick={() => handleImageChange("prev")}></i>
+            onClick={() => handleImageChange()}></i>
           <img
             className="carousel_img"
             src={images[currentImageIndex]}
