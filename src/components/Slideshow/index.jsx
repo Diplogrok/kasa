@@ -30,17 +30,16 @@ const Slideshow = ({ images }) => {
           <img
             className="carousel_img"
             src={images[currentImageIndex]}
-            alt={`Slide ${currentImageIndex + 1}`}
+            alt={`Slide ${currentImageIndex}`}
           />
           <i
             className="fa-solid fa-chevron-right carousel_ico left"
             onClick={() => handleImageChange("next")}></i>
+
           {/* Affichage du numéro de l'image actuelle */}
-          {images.length > 1 && (
-            <div className="imagecount">
-              {currentImageIndex + 1}/{images.length}
-            </div>
-          )}
+          <div className="imagecount">
+            {currentImageIndex + 1}/{images.length}
+          </div>
         </>
       )}
       {/* Si le nombre d'images est égal à 1, afficher uniquement cette image */}
@@ -48,7 +47,7 @@ const Slideshow = ({ images }) => {
         <img
           className="carousel_img"
           src={images[0]}
-          alt={`Slide ${currentImageIndex + 1}`}
+          alt={`Slide ${currentImageIndex}`}
         />
       )}
     </div>
